@@ -8,17 +8,24 @@ public class AlfredQuotes {
     
     public String guestGreeting(String name) {
         // YOUR CODE HERE
-        return ("%s, what are you doing here?", name);
+        return String.format("Hello %s, what are you doing here?",name);
     }
     
     public String dateAnnouncement() {
-        // YOUR CODE HERE
-        return "place holder for date announcement return string";
+        Date date = new Date();
+        return "What a nice day! It is currently" + date;
     }
     
     public String respondBeforeAlexis(String conversation) {
-        // YOUR CODE HERE
-        return "for snarky response return string";
+        if(conversation.indexOf("Alexis") > -1) {
+            return "Alexis can't help you but I sure can.";
+        }
+        if(conversation.indexOf("Alfred") > -1) {
+            return "But of course, anything in the name of Alfred.";
+        }
+        else{
+            return "I will await any further instructions if needed. Otherwise, I will excuse myself.";
+        }
     }
     
 	// NINJA BONUS
