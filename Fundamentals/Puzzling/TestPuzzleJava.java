@@ -4,12 +4,13 @@ import java.util.Random;
 public class TestPuzzleJava {
     
 	public static void main(String[] args) {
-		PuzzleJava generator = new PuzzleJava();
-		ArrayList<Integer> randomRolls = generator.getTenRolls();
+		PuzzleJava randomizer = new PuzzleJava();
+		ArrayList<Integer> randomRolls = randomizer.getTenRolls();
 		System.out.println(randomRolls);
-		// System.out.println(generator.getRandomLetter());
-		// System.out.println(generator.generatePassword())
-		// System.out.println(generator.g)
+		
+		System.out.println(randomizer.getRandomLetter());
+		System.out.println(randomizer.generatePassword());
+		// System.out.println(randomizer.getNewPassword());
     	// //..
 		// // Write your other test cases here.
 		// //..
