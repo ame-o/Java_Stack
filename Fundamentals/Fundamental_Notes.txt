@@ -1,0 +1,14 @@
+/*-----the TestFile.java always holds the main method, javac TestFile.java---*/
+
+public class TestGreetings {
+    public static void main(String[] args) {
+        Greetings greeterApp = new Greetings(); // 1
+        String dateMessage = greeterApp.getCurrentDate(); // 2
+        System.out.println(dateMessage); // 3
+    }
+}             
+
+
+******the code above always needs to be included in the system******
+
+
