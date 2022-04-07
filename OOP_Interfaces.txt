@@ -1,0 +1,22 @@
+INTERFACE METHODS
+
+* default methods - allow creators to use default methods that do not need implementation
+                    -declared wth "default"
+* static methods - interface member methods implemented on the interface level 
+                - not the class / therefore cannot be 
+                - declared with "static"
+* abstract methods - declared without implementation
+
+----implementation----
+* must use the keyword "implements" in our class definitions
+* a class that implements an interface must implement all methods except default and static
+
+* classes can implement multiple interfaces but can only inherit from one superclass
+
+--------comparing interfaces with classes----------
+* can contain any number of methods
+* file name must match interface name
+*package name must match to be able to use file with classes
+* cannot instantiate an interface / therefore no constructors
+* fields in an interface mustbe static and final /cannot change
+* an interface can "extend" multiple interfaces 
