@@ -1,0 +1,89 @@
+---------------Fixed Arrays----------------
+int[] myArray;
+myArray = new int[5];    // Initialization
+myArray[0] = 4;
+myArray[1] = 8;
+myArray[2] = 8;
+myArray[3] = 5;
+myArray[4] = 9;
+
+or also:
+--------
+int[] myArray = {4, 8, 8, 5, 9};
+
+-------------ArrayLists/Dynamic Arrays----------------
+import java.util.ArrayList;
+//   need to import java.util  //
+ArrayList<Integer> myArray = new ArrayList<Integer>();
+//   declare it is an arraylist<DataType> nameOfArray  //
+// = new to instantiate that new arraylist   //
+
+example:
+import java.util.ArrayList;
+ArrayList<Object> things = new ArrayList<Object>();
+things.add(10);
+things.add("Hello");
+things.add(new ArrayList<Integer>());
+things.add(12.5);
+        
+System.out.println(list); // { 10, "Hello", [], 12.5 }
+
+-------------------------------------------------------
+use a forloop to iterate through a FixedArrays or Dynamic Arrays
+
+for(int i = 0; i < dynamicArray.size(); i++){
+    String name = dynamicArray.get(i);
+    System.out.println("hello " + name);
+    // other operations using name
+}
+
+
+------------enhanced forloop -------------------
+for(String name : dynamicArray){
+    System.out.println("hello " + name);
+    // other operations using name
+}
+=========================================================
+        Hashmaps
+=========================================================
+import java.util.HashMap;
+//  create a hash map   //
+HashMap<String, String> userMap = new HashMap<String, String>();
+//   string is for key, 2nd string is for value   //
+
+//   add key value pairs to it   //
+userMap.put("nninja@codingdojo.com", "Nancy Ninja");
+userMap.put("ssamurai@codingdojo.com", "Sam Samurai");
+
+//   get key value pairs from it   //
+String name = userMap.get("nninja@codingdojo.com");
+
+EXAMPLE:
+import java.util.Set;
+//   import   // 
+
+//   create a new classmethod   //
+public class HashMapFun {
+    public static void main(String[] args) {
+        HashMap<String, String> userMap = new HashMap<String, String>();
+        userMap.put("nninja@codingdojo.com", "Nancy Ninja");
+        userMap.put("ssamurai@codingdojo.com", "Sam Samurai");
+        userMap.put("wwizard@codingdojo.com", "Walter Wizard");
+
+//   get the keys by using the keySet method   //
+        Set<String> keys = userMap.keySet();
+
+//   enhanced loop to iterate over it   //
+        for(String key : keys) {
+            System.out.println(key);
+            System.out.println(userMap.get(key));    
+        }
+    }
+}
+
+
+
+
+
+
+

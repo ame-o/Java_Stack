@@ -1,0 +1,40 @@
+Objects and Classes
+-----------------------
+* Member variables - object attributes or fields that belong to a data type or class.
+
+* Local variables - variables within methods code blocks that are not member variables, they vanish when the method ends (goes out of scope or returns).
+
+
+* Parameter variables - those that are declared in your method signature (between the parentheses!) which are also arguments?
+
+-----------------in the Class file----------------------
+public class MyClass {
+    Modifiers:
+    * private: Only the class in which it is declared can see and access the method. This is the most restrictive access level.
+    * protected: Protected access gives subclasses a chance to use the method, while preventing a nonrelated class from trying to use it.
+    * public: Every class everywhere has access to the method.
+
+    //   member attributes   //
+
+    //   CONSTRUCTOR   //
+    * public MyClass(DataType nameOfVariable){
+        this.attribute = nameOfVariable;
+    * doesn't have a return type
+
+    }
+
+    //   METHODS   //
+    public void (void can be used when datatype is not needed for method)
+    * method names should be a verb
+    
+    * static modifier: One rule-of-thumb: ask yourself "does it make sense to call this method, even if an object has not been constructed yet?" 
+
+    //   GETTERS AND SETTERS   //
+* get methods - need to have a returnType and returns
+* set methods - can be void type and do not need returns
+}
+
+---------in the Main/Test file-----------------
+* compile this file - "javac TestFile.java" in the terminal
+
+* parameters in instatiation 

@@ -6,7 +6,5 @@ public class Order{
     boolean ready;
     ArrayList<Item> items = new ArrayList<Item>();
 
-    public addItems(Item items){
-        items.add(items);
-    }
+
 }
